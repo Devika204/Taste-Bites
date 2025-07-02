@@ -1,0 +1,119 @@
+/* Style the background */
+body
+{
+    margin: 0;
+    background-image: url('images/bgpic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Style the header part */
+header
+{
+    background-color: transparent;
+}
+
+/* Style the header link part */
+nav
+{
+    display: inline;
+    justify-content: space-between;
+    text-align: center;
+    letter-spacing: 30px;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.lin
+{
+    justify-content: center;
+    background-color: transparent;
+    display: inline;
+    width: 100%;
+    letter-spacing: 0;
+}
+
+.lin a
+{
+    float: left;
+    padding: 10px 10px;
+    font-size: large;
+    text-shadow: 2px 2px 2px black;
+    margin: 20px 59px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+/* making hover effect to links */
+.lin a:hover
+{
+    background-color: gray;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* making responsive */
+@media screen and (max-width:600px) 
+{
+    .lin a
+    {
+        width: 100%;
+        display: block;
+    }    
+}
+
+@media screen and (max-width:300px) 
+{
+    .lin a
+    {
+        width: 100%;
+        display: block;
+    }    
+}
+
+nav a
+{
+    text-decoration: none;
+    color: rgb(238, 210, 158);
+    text-shadow: 2px 2px 3px black;
+}
+
+/* Second Text styling */
+.p2
+{
+    color: greenyellow;
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-left: 30px;
+    padding-top: 100px;
+}
+
+/* first Text styling */
+#sp
+{
+    display: block;
+    font-family: sans-serif;
+    font-size: xx-large;
+    color: white;
+    margin: 40px;
+    font-style: italic;
+    margin-top: 90px;
+    text-shadow: 4px 3px 5px black;
+}
+
+/* pseudo class property */
+#sp::first-letter
+{
+    color: greenyellow;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
+    padding-left: 50px;
+    text-shadow: 3px 2px 4px rgb(93, 154, 154);
+}
