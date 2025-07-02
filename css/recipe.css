@@ -1,0 +1,141 @@
+/* Style the background */
+body
+{
+    background-image: linear-gradient(to bottom right, #6889ff, #c668ff);
+    background-repeat: no-repeat;
+    height: 97.8vh;
+}
+.grid-container
+{
+    display: inline-grid;
+    grid-template-columns: repeat(6,100px);
+    gap: 10px;
+    background-color: transparent;
+    margin-left: 450px;
+    margin-top: 10px;
+}
+.grid-item
+{
+    background-image: radial-gradient(rgb(151, 151, 215) 28% , rgb(105, 105, 176));
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    border-radius: 20px;
+    border: 2px solid slateblue;
+    text-shadow: 3px 3px 4px black;
+}
+form
+{
+    border: 1px solid slateblue;
+    padding: 20px;
+    background-image: linear-gradient(to bottom,#1e1b32 66%,#2c2b31,#1e1b32);
+    color: white;
+}
+.div2
+{
+    color: black;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid slateblue;
+    background-color:black;
+}
+
+.txt
+{
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;   
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    border: 1px solid black;
+    padding-left: 20px;
+    background-image: linear-gradient(#1e1b32 1%,#39383d);
+    font-weight: bold;
+    color: azure;
+}
+
+#lab1
+{
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-image: linear-gradient(#1e1b32,#39383d 12%);
+    font-weight: bold;
+    color: azure;
+}
+
+#lab2
+{
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-image: linear-gradient(#1e1b32,#39383d 12%);
+    font-weight: bold;
+    color: azure;
+}
+
+button
+{
+    height: 30px;
+    width: 100px;
+    color: lavender;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-left: 150px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 3px 3px 4px black;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    background-image: linear-gradient(#7c29b0 ,#c668ff 29%);
+}
+button:hover
+{
+    background-image: linear-gradient(#2641a1 ,#6889ff 29%);
+    text-shadow: 3px 3px 4px black;
+    transform: scale(1.1);
+}
+
+.div2
+{
+    float: left;
+    padding: 5px;
+    margin: 30px;
+    transition: 0.3s ease-out;
+}
+.div2:hover
+{
+    transform: scale(1.02);
+}
+.div3
+{
+    float: right;
+    margin-right: 30px;
+    font-size: x-large;
+    font-style: italic;
+    width: 900px;
+    margin-top: 120px;
+    color: white;
+    font-style: italic;
+    text-shadow: 2px 4px 6px black;
+}
+.div3::selection
+{
+    color: black;
+}
+.div3::first-letter
+{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
+    text-shadow: 3px 2px 5px rgb(71, 71, 148);
+}

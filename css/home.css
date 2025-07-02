@@ -1,0 +1,310 @@
+/* Style the background */
+body
+{
+    background-color: #1e1b32;
+    margin: 0;
+}
+
+/* Style the header part */
+header
+{
+    background-color: black;
+    padding: 10px 20px;
+    /* sticks on the upper part */
+    position: sticky; 
+    top: 0;
+    /* for providing priority which should overlap who */
+    z-index: 2;
+    border-radius: 5px;
+    height: 85px;
+    margin: 5px;
+    margin-top: 1px;
+}
+
+/* Style the header link part */
+nav
+{
+    display: flex;
+    /* provide space between the elements */
+    justify-content: space-between;
+    text-align: center;
+    position: sticky; 
+    top: 0;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.lin
+{
+    justify-content:center;
+    margin: 0px 85px; 
+    display: flex;
+    width: 100%;
+}
+.lin a
+{
+    float: left;
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    margin: 32px 38px;
+    padding: 5px 13px;
+    /* no underline for text */
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+/* making hover effect to links */
+.lin a:hover
+{
+    transform: scale(1.20);
+    border-radius: 10px;
+    /* shadow effect for text */
+    text-shadow: 3px 2px 8px cyan;
+}
+
+/* designing footer part */
+footer
+{
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+
+.divf
+{
+    text-align: left;
+    font-size: small;   
+    color: aliceblue;
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 1px;
+}
+.divf a
+{
+    padding: 10px;
+}
+
+/* footer pseudo class property */
+.container3
+{
+    display: flex;
+}
+.container3:nth-child(1)
+{
+    flex: 1;
+}
+.container3:nth-child(2)
+{
+    flex: 2;
+}
+
+/* 1st paragraph of the webpage */
+#first
+{
+   margin-left: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: rgb(181, 181, 181);
+   margin: 30px;
+   font-style: italic;
+   font-size: larger;
+   text-shadow: 4px 4px 7px black;
+}
+
+/* pseudo element property for 1st paragraph of the webpage */
+#first::first-letter
+{
+    color: ghostwhite;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
+    padding-left: 50px;
+    text-shadow: 3px 2px 4px rgb(93, 154, 154);
+}
+
+/* pseudo element property for 1st paragraph of the webpage */
+#first::selection
+{
+    color: hotpink;
+}   
+
+marquee 
+{
+    color: orange;
+    font-family: monospace;
+    font-size: large;
+    /* gradient styling */
+    background-image: linear-gradient(to bottom,#383451,#29282b,#383451);
+    margin: 20px;
+    /* adding border */
+    border: 2px solid black;
+    border-left: 4px solid gold;
+    border-right: 4px solid gold;
+    /* for providing priority which should overlap who */
+    z-index: 1;
+    height: 60px;
+    padding: 15px;
+} 
+
+/* "OUR CHEFS" styling with animation*/
+.head1
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 3px cyan;
+    color: whitesmoke;
+    height: 100px;
+    width: 300px;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+}
+
+.head1 {animation-timing-function: linear;}
+
+@keyframes mymove
+{
+    from {left: 0px;}
+    to {left: 600px;}
+}
+
+/* table styling */
+table, td, th,tr
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.div2 
+{
+    border: 10px groove black;
+    width: fit-content;
+    margin-left: 250px;
+    transition: .4s ease-in-out;
+}
+
+/* hover effect */
+.div2:hover
+{
+    transform: scale(1.05);
+}
+
+/* last paragraph styling */
+/* providing animations */
+#second
+{
+    margin: 30px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    background-color: rgb(212, 212, 212);
+    animation-name: example;
+    /* time */
+    animation-duration: 5s;
+    border-radius: 5px;
+    /* continue the loop infinitly */
+    animation-iteration-count: infinite;
+    border: 2px solid cyan;
+}
+
+/* making animation */
+@keyframes example
+{
+    0% { background-color: #1134a6}
+    25% {background-color: #0f52ba}
+    50% {background-color: #0080fe}
+    100% {background-color: #89cfef}
+}
+
+/* pseudo element property for last paragraph of the webpage */
+#second::first-letter
+{
+    padding-left: 50px;
+}
+
+/* pseudo element property for last paragraph of the webpage */
+#second::selection
+{
+    color: goldenrod;
+}   
+
+/* chefs quotes styling */
+.div3
+{
+    margin-left: 60px;
+    color: rgb(6, 6, 89);
+    width: 1400px;
+    padding: 40px;
+    background-image: linear-gradient( #53576f , #b8bcd1 10% );
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+   
+.div3:hover
+{
+    transform: scale(1.04);
+}
+
+mark
+{
+    color: teal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px 2px burlywood;
+}
+
+/* making hover effect to the table elements */
+th.john:hover
+{
+    color: rgb(3, 3, 126);
+    font-size: 28px;
+}
+th.Maria:hover
+{
+    color: rgb(3, 3, 126);
+    font-size: 28px;
+}
+th.Marque:hover
+{
+    color: rgb(3, 3, 126);
+    font-size: 28px;
+}
+th.Daisy:hover
+{
+    color: rgb(3, 3, 126);
+    font-size: 28px;
+}
+
+/* design all h2 tags */
+h2
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+/* "Enjoy your time" styling with animations */
+.div4
+{
+    width: 300px;
+    height: 50px;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 11s;
+    animation-direction:alternate-reverse;
+    text-align: center;
+    animation-iteration-count: infinite;
+    padding: 5px;
+    border-radius: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+@keyframes example2
+{
+    0%   {background-image:linear-gradient(rgb(128, 30, 174) , rgb(131, 77, 142) 30%); left: 0px;color: white;}
+    
+    100% {background-image:linear-gradient(rgb(103, 64, 103) , rgb(181, 133, 181) 30%) ; left: 1219px;}
+}

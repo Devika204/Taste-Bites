@@ -1,0 +1,285 @@
+/* Style the background */
+body
+{
+    background-color: #1e1b32;
+    margin: 0;
+}
+header
+{
+    background-color: black;
+    padding: 10px 20px;
+    position: sticky; 
+    top: 0;
+    z-index: 2;
+    border-radius: 5px;
+    height: 85px;
+    margin: 5px;
+    margin-top: 1px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky; 
+    top: 0;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.lin
+{
+    justify-content:center;
+    margin: 0px 85px; 
+    display: flex;
+    width: 100%;
+}
+.lin a
+{
+    float: left;
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    margin: 32px 38px;
+    padding: 5px 13px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+.lin a:hover
+{
+    transform: scale(1.20);
+    border-radius: 10px;
+    text-shadow: 3px 2px 6px cyan;
+}
+footer
+{
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+.divf
+{
+    text-align: left;
+    font-size: small;   
+    color: aliceblue;
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 1px;
+}
+.divf a
+{
+    padding: 10px;
+}
+.container3
+{
+    display: flex;
+}
+.container3:nth-child(1)
+{
+    flex: 1;
+}
+.container3:nth-child(2)
+{
+    flex: 2;
+}
+table
+{
+    margin-left: 600px;
+}
+
+.head1:hover
+{
+    transform: rotateY(360deg);
+}
+ul
+{
+    margin: 30px;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom,#1e1b32,#403f44,#1e1b32);
+    list-style-type: square;
+    list-style-position: outside;
+}
+ul li
+{
+    background-color: #403f44;
+    margin-right: 40px;
+    padding-left: 20px;
+    border: 2px dashed orange;
+    height: 30px;
+    padding-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+li 
+{
+    transition: 0.3s ease-in-out;
+}
+li:hover
+{
+    transform:scaleX(1.1);
+    border: 2px dashed cyan;
+
+}
+
+.p1
+{
+    background-color: gray;
+    padding-left: 20px;
+    margin-right: 40px;
+    border: 2px solid blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.p2
+{
+    background-color: gray;
+    padding-left: 20px;
+    margin-right: 40px;
+    border: 2px solid blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.p3
+{
+    background-color: gray;
+    padding-left: 20px;
+    margin-right: 40px;
+    border: 2px solid blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.p4
+{
+    background-color: gray;
+    padding-left: 20px;
+    margin-right: 40px;
+    border: 2px solid blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.div1
+{
+    background-color: gray;
+    padding-left: 20px;
+    margin-right: 40px;
+    border: 2px solid blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+ol li
+{
+    border: none;
+    background-color: gray;
+}
+ol li:hover
+{
+    transform: none;
+    border: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.a1:link
+{
+    background-color: rgb(181, 124, 206);
+    color: white;
+}
+.a1:hover
+{
+    background-color: rgb(183, 89, 183);
+    color: palegoldenrod;
+}
+.a2:link
+{
+    background-color: rgb(181, 124, 206);
+    color: white;
+}
+.a2:hover
+{
+    background-color: rgb(183, 89, 183);
+    color: palegoldenrod;
+}
+.a3:link
+{
+    background-color: rgb(181, 124, 206);
+    color: white;
+}
+.a3:hover
+{
+    background-color: rgb(183, 89, 183);
+    color: palegoldenrod;
+}
+.a4:link
+{
+    background-color: rgb(181, 124, 206);
+    color: white;
+}
+.a4:hover
+{
+    background-color: rgb(183, 89, 183);
+    color: palegoldenrod;
+}
+.overflow
+{
+    margin: 30px;
+    width: 1450px;
+    height: 600px;
+    border: 1px solid;
+    overflow: auto; 
+    background-color: black;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.blank
+{
+    margin: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #353437;
+    color: rgb(173, 171, 171);
+    border: 2px solid rebeccapurple;
+}
+.blank:hover
+{
+    border: 2px solid cyan;
+}
+.share
+{
+    height: 40px;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 40px;
+    background-image: linear-gradient(to bottom right, #5b7fff, #33ccfc);
+    transition: 0.3s ease-in;
+}
+.share:hover
+{
+    background-image: linear-gradient(to bottom right, #ff6868, #ff68de);
+    transform: scale(1.1);
+}
+.he1
+{
+    text-align: center;
+    text-shadow: 2px 2px 4px cyan;
+    color: black;
+}
+img.a
+{
+    vertical-align: text-bottom;
+}

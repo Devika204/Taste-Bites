@@ -1,0 +1,176 @@
+$bgimg:  #1e1b32;
+$bgimg2: linear-gradient(#1e1b32,#403f44 88%);
+$bgimg3: linear-gradient(to bottom,#403f44,gray,#403f44);
+$bgcol1: black;
+$pad1: 10px 20px;
+$pos1: sticky;
+$bor1: 1px solid black;
+$bor2: 10px groove rebeccapurple;
+$bor3: 4px groove orange;
+$borrad1: 5px;
+$borrad2: 10px;
+$borrad3: 20px;
+$align: center;
+$dis: flex;
+$fontsiz: large;
+$fontsiz2: small;
+$fontsiz3: larger;
+$fontweig: bold;
+$fontweig2: bolder;
+$trans: 0.2s ease-in-out;
+$trans2: 0.3s ease-out;
+$transf: scale(1.20);  
+$transf2: scale(1.02);
+$col1: white;
+$col2: blanchedalmond;
+$col3: gold;
+$fontst: italic;
+$txtshad: 2px 3px 3px black;
+$txtshad2: 3px 2px 7px cyan;
+
+/* Style the background */
+body
+{
+    background-color: $bgimg;
+    margin: 0;
+}
+header
+{
+    background-color: $bgcol1;
+    padding: $pad1;
+    position: $pos1; 
+    top: 0;
+    z-index: 2;
+    border: $bor1;
+    border-radius: $borrad1;
+    height: 85px;
+    margin: $borrad1;
+    margin-top: 1px;
+}
+nav
+{
+    display: $dis;
+    justify-content: space-between;
+    text-align: $align;
+    position: $pos1; 
+    top: 0;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.lin
+{
+    justify-content: $align;
+    margin: 0px 85px; 
+    display: $dis;
+    width: 100%;
+}
+.lin a
+{
+    float: left;
+    display: $dis;
+    font-size: $fontsiz;
+    font-weight: $fontweig;
+    margin: 32px 38px;
+    padding: 5px 13px;
+    text-decoration: none;
+    transition: $trans;
+}
+.lin a:hover
+{
+    transform: $transf;
+    border-radius: $borrad2;
+    text-shadow: $txtshad2;
+}
+footer
+{
+    background-color: $bgcol1;
+    color: $col1;
+    margin: 0px;
+}
+.divf
+{
+    text-align: left;
+    font-size: $fontsiz2;   
+    color: $col1;
+    margin: 0px;
+    padding: $borrad3;
+    padding-bottom: 1px;
+}
+.divf a
+{
+    padding: $borrad2;
+}
+.container3
+{
+    display: $dis;
+}
+.container3:nth-child(1)
+{
+    flex: 1;
+}
+.container3:nth-child(2)
+{
+    flex: 2;
+}
+td
+{
+    background-image: $bgimg2;
+}
+th,td
+{
+    border-collapse: collapse;
+    border: $bor2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: $fontsiz3;
+    font-style: $fontst;
+    color:$col1;
+    text-align: $align;
+    border-radius: $borrad2;
+    transition: $trans;
+}
+th
+{
+    border: $bor3;
+    background-image: $bgimg2;
+}
+
+table
+{
+    margin-left: 140px;
+    margin-top: 30px;
+    border: 1px solid transparent;
+    border-radius: $borrad3;
+}
+.div2
+{
+    text-align: left;
+    height: 250px;
+    font-size: $fontsiz2;
+    margin-left: 500px;
+}
+th:hover
+{
+    color: $col2;
+    font-size: x-large;
+}
+td:hover
+{
+    background-image: $bgimg3;
+    color: $col3;
+    font-weight: $fontweig;
+    transform: $transf2;
+}
+
+h2
+{
+    font-size: xx-large; 
+    font-family: fantasy; 
+    font-weight: $fontweig2;
+    color: rgb(102, 102, 205);
+    text-shadow: $txtshad;
+    padding-left: 80px;
+}
